@@ -20,7 +20,6 @@ gem 'rails-html-sanitizer'
 gem 'sdoc', '~> 0.4.0',          group: :doc
 
 gem 'spring',        group: :development
-gem 'sqlite3'
 gem 'byebug'
 gem 'web-console'
 
@@ -36,7 +35,9 @@ group :production do
   gem 'unicorn',        '4.8.3'
 end
 
-
+group :development do
+   gem 'sqlite3'
+ end
 
 # gem 'debugger', group: [:development, :test]
 
